@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Currency Exchange</title>
+    <style>
+        body {
+            background-color: #156d15; /* Green background color */
+            width: 300px; 
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        #resultPrice {
+            font-size: 18px; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif'Verdana', sans-serif;
+            color: #c8d1db;
+            margin-top: 10px;
+            margin-bottom: 20px;;
+        }
+        #container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-bottom: 20px; 
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            color: #c8d1db;
+        }
+    </style>
+    <script src="exchange.js"></script>
+</head>
+<body>
+    <div id="containter"></div>
+        <h1>Exchange Rate to US Dollars</h1>
+        <input type="number" id="amount" placeholder="Enter in Amount"/>
+        <select id="currency">
+            <option value="EUR">EUR</option>
+            <option value="CAD">CAD</option>
+            <option value="JPY">JPY</option>
+            <option value="GBP">GBP</option>
+            <option value="CNY">CNY</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+            <option value="HKD">HKD</option>
+            <option value="KRW">KRW</option>
+            <option value="NZD">NZD</option>
+        </select>
+        <button id="convert">Convert Currency</button>
+        <div id="resultPrice"></div>
+    </div>
+</body>
+</html>
